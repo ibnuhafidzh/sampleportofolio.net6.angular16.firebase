@@ -1,6 +1,6 @@
 # sampleportofolio.net6.angular16.firebase
 
-[HzNet-Angular16-Firebase-Sucess-Login](portfolio.jpeg)
+[screenshot](portofolio.jpeg)
 
 this is application developed using visual studio 2022 and combine with .net core 6 as backend and angular 16.0 as frontend and the databases it self using firebase..
 
