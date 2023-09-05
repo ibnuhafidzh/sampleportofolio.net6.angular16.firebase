@@ -1,0 +1,11 @@
+{
+  "hosting": [
+    {
+      "target": "WebApp",
+      "source": ".",
+      "frameworksBackend": {
+        "region": "asia-east1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mycv-b912f": {
+      "hosting": {
+        "WebApp": [
+          "ibnuhz"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mycv-b912f"
+  }
+}

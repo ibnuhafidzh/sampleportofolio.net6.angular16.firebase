@@ -1,0 +1,38 @@
+<div class="modal fade show" id="exampleModalScrollable" tabindex="-1" aria-labelledby="exampleModalScrollableTitle" style="display: block;" aria-modal="true" role="dialog">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">Detail Information</h5>
+        <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card lesson-border">
+          <div class="card-body">
+            <h5 class="card-title"><b>Company: </b> {{lesson.name}}</h5>
+            <p class="card-text"><b>Type: {{lesson.type}}</b></p>
+            <p class="card-text"><b>Duration: {{lesson.duration}}</b></p>
+            <p class="card-text"><b>Detail:<div [innerHTML]="lesson.detail"></div></b></p>
+            <div *ngIf="lesson.demo">
+
+              <div *ngFor="let item of lesson.demo">
+                <ul *ngIf="item">
+                  <li>
+                    {{item["name"]}}
+                  </li>
+                  <li *ngIf="item['link'] != '#'">
+                    <a href="{{item['link']}}">{{item["link"]}}</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
